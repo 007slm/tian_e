@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="browser_action_bar_height">42dp</dimen>
+	<dimen name="browser_action_bar_padding">4dp</dimen>
+	<dimen name="browser_actbar_separator_padding_hori">10dp</dimen>
+	<dimen name="browser_action_bar_text_size">19dp</dimen>
+	<dimen name="browser_menu_text_size">14dp</dimen>
+	<dimen name="browser_action_bar_text_size_global">36dp</dimen>
+	<dimen name="browser_action_bar_text_size_line1">18dp</dimen>
+	<dimen name="browser_action_bar_text_size_line2">10.5dp</dimen>
+	<dimen name="batchmode_confirm_btn_padding_right">13dp</dimen>
+	<dimen name="batchmode_confirm_btn_padding_left">9dp</dimen>
+	<dimen name="batchmode_already_selected_margin_left">6dp</dimen>
+	<dimen name="customdialog_margin_left">9dp</dimen>
+	<dimen name="dialog_width">300dp</dimen>
+	<dimen name="help_guide_read_dismiss_x">50dip</dimen>
+	<dimen name="help_guide_read_dismiss_y">80dip</dimen>
+	<dimen name="readingbutton_margin_right">4dip</dimen>
+	<dimen name="efficient_read_y_offset">30dip</dimen>
+	<dimen name="help_offset_center_vertical">220dip</dimen>
+</resources>

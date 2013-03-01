@@ -1,0 +1,437 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.orange.browser" 
+	android:versionCode="1" 
+	android:versionName="2.0 build?">
+	
+    <!-- <original-package android:name="com.android.browser" /> -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    
+    <supports-screens android:smallScreens="false" />
+        
+    <application
+        android:name="com.orange.browser.Browser"
+        android:icon="@mipmap/ic_launcher_browser"
+        android:label="@string/application_name"
+        android:taskAffinity="orange.task.browser"
+        android:theme="@style/Theme.Cygnus" >
+
+        <!-- android:backupAgent="com.android.browser.BrowserBackupAgent" -->
+        <provider
+            android:name="com.orange.browser.provider.BrowserProvider"
+            android:authorities="com.orange.browser"
+            android:multiprocess="true"
+            android:readPermission="com.orange.browser.permission.READ_HISTORY_BOOKMARKS"
+            android:writePermission="com.orange.browser.permission.WRITE_HISTORY_BOOKMARKS" >
+            <path-permission
+                android:path="/bookmarks/search_suggest_query"
+                android:readPermission="android.permission.GLOBAL_SEARCH" />
+        </provider>
+        
+        <provider
+            android:name="com.orange.browser.provider.BlackWhiteListProvider"
+            android:authorities="com.orange.browser.blackwhitelist" />
+
+        <activity
+            android:name="com.orange.browser.SplashActivity"
+            android:label="@string/application_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.orange.browser.TutorialPageActivity"></activity>
+
+        <activity
+            android:name="com.orange.browser.BrowserActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:label="@string/application_name"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Cygnus"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.speech.action.VOICE_SEARCH_RESULTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!--
+                 For these schemes were not particular MIME type has been
+                 supplied, we are a good candidate.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="about" />
+                <data android:scheme="javascript" />
+            </intent-filter>
+            <!--
+                  For these schemes where any of these particular MIME types
+                  have been supplied, we are a good candidate.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="inline" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/xhtml+xml" />
+                <data android:mimeType="application/vnd.wap.xhtml+xml" />
+            </intent-filter>
+            <!-- For viewing saved web archives. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="file" />
+                <data android:mimeType="application/x-webarchive-xml" />
+            </intent-filter>
+            <!-- Accept inbound NFC URLs at a low priority -->
+            <intent-filter android:priority="-101" >
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+            <!-- We are also the main entry point of the browser. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.APP_BROWSER" />
+            </intent-filter>
+            <!--
+            The maps app is a much better experience, so it's not
+                 worth having this at all... especially for a demo!
+            <intent-filter android:label="Map In Browser">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/postal-address" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.orange.browser.CombinedBookmarkHistoryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:label="@string/bookmarks"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Cygnus.Bookmark" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.orange.browser.BrowserActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.orange.browser.BrowserBookmarksPage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/bookmarks"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="com.orange.browser.BrowserHistoryPage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.orange.browser.AddBookmarkPage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="Save bookmark"
+            android:theme="@style/Theme.Cygnus.Dialog"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.dir/com.orange.browser.bookmark" />
+            </intent-filter>
+        </activity>
+
+        <!-- Makes .BrowserActivity the search target for any activity in Browser -->
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value="com.orange.browser.BrowserActivity" />
+
+        <activity
+            android:name="com.orange.browser.BrowserPreferencesPage"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/menu_preferences"
+            android:theme="@style/Cygnus.Default">
+        </activity>
+
+        <provider
+            android:name="dep.com.android.providers.downloads.DownloadProvider"
+            android:authorities="orangedownloads" />
+
+        <service android:name="dep.com.android.providers.downloads.DownloadService" />
+
+        <receiver
+            android:name="dep.com.android.providers.downloads.DownloadReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.orange.browser.NewPackageDownloadedReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name="com.orange.browser.DownloadPage"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <activity
+            android:name="com.orange.browser.WebsiteSettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label=""
+            android:theme="@style/Cygnus.Default" >
+        </activity>
+
+        <!-- Reading Mode Components -->
+        <!-- android:hardwareAccelerated="false" MUST set to false in
+        	 any activity which uses WebView or transparent background
+        	 of WebView will not work for webview. (Happens on Android 3.0+)
+         -->
+        <activity
+            android:name="com.orange.cygnus.reading.activity.ReadingPagerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/activity_reading_pager"
+            android:launchMode="singleInstance"
+            android:hardwareAccelerated="true" 
+            android:theme="@style/Theme.ReadingPagerActivity" 
+            android:process=":ReadingProcess">
+            <intent-filter>
+                <action android:name="com.orange.cygnus.reading.ACTION_VIEW_ARTICLES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.orange.cygnus.reading.activity.QuickReadingPagerActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/activity_quick_reading_list"
+            android:theme="@style/Theme.DefaultActivity.QuickReadingList" 
+            android:process=":ReadingProcess">
+            <intent-filter>
+                <action android:name="com.orange.cygnus.reading.ACTION_QUICK_READING_PAGER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.orange.cygnus.reading.activity.ReadingListActivity"
+            android:label="@string/activity_reading_list"
+            android:theme="@style/Theme.DefaultActivity" 
+            android:launchMode="singleInstance"
+            android:process=":ReadingProcess">
+            <intent-filter>
+                <action android:name="com.orange.cygnus.reading.ACTION_READING_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+<!-- 
+        <activity
+            android:name="com.orange.cygnus.reading.activity.ReadingModeActivity"
+            android:label="@string/activity_reading_mode"
+            android:theme="@style/Theme.DefaultActivity" 
+            android:process=":ReadingProcess">
+            <intent-filter>
+                <action android:name="com.orange.cygnus.reading.ACTION_VIEW_ARTICLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ -->                
+        <activity
+            android:name="com.orange.cygnus.reading.activity.AddToReadingListActivity"
+            android:theme="@style/Theme.TransparentActivity" 
+            android:process=":ReadingProcess">
+            <intent-filter android:label="@string/activity_add_to_reading_list" >
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+            
+        
+        <activity android:name="com.orange.browser.GestureHelpActivity" 
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"/>
+        
+        <activity
+            android:name="com.orange.cygnus.reading.activity.LoginActivity"
+            android:label="@string/activity_login"
+            android:theme="@style/Theme.DefaultActivity" 
+            android:process=":ReadingProcess">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+<!--         
+        <activity
+            android:name="com.orange.cygnus.reading.javascript.WebInterfaceTestActivity"
+            android:label="@string/activity_web_interface_test" 
+            android:process=":ReadingProcess">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+ -->
+        
+        <activity
+            android:name="com.orange.browser.AppRateActivity"
+            android:theme="@style/Theme.Cygnus.Dialog.NoTitle"
+            >
+        </activity>
+    
+        <receiver android:name="com.orange.cygnus.reading.CygReadCommandReceiver" 
+            android:process=":ReadingProcess">
+            <intent-filter>
+                <action android:name="com.orange.cygnus.reading.ACTION_ADD_ITEM" />
+                <action android:name="com.orange.cygnus.reading.ACTION_ADD_ITEMS" />
+                <action android:name="com.orange.cygnus.reading.ACTION_UPDATE_ITEM" />
+                <action android:name="com.orange.cygnus.reading.ACTION_DELETE_ITEM" />
+                <action android:name="com.orange.cygnus.reading.ACTION_ADD_QUICK_ITEM" />
+                <action android:name="com.orange.cygnus.reading.ACTION_CLEAR_QUICK_ITEMS" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.orange.cygnus.reading.CygReadSyncService" 
+            android:process=":ReadingProcess">
+            <intent-filter>
+                <action android:name="com.orange.cygnus.reading.ACTION_SYNC" />
+                <action android:name="com.orange.cygnus.reading.ACTION_SCHEDULE_SYNC" />
+            </intent-filter>
+        </service>
+        
+        <service
+            android:name="com.orange.cygnus.reading.CygReadIOService"
+            android:process=":ReadingProcess" >
+            <intent-filter>
+                <action android:name="com.orange.cygnus.reading.ACTION_FILEIO" />
+            </intent-filter>
+        </service>
+        
+        <provider
+            android:name="com.orange.cygnus.reading.database.CygReadDatabaseConnectivityProvider"
+            android:authorities="com.orange.cygnus.reading.database" 
+            android:process=":ReadingProcess"/>
+
+        <provider
+            android:name="com.orange.cygnus.reading.simplecrawler.javascript.provider.JavascriptListProvider"
+            android:authorities="com.orange.cygnus.reading.javascript" 
+            android:process=":ReadingProcess"/>
+
+        <provider
+            android:name="com.orange.cygnus.reading.javascript.FaviconContentProvider"
+            android:authorities="com.orange.cygnus.reading.localfiles.favicon" 
+            android:process=":ReadingProcess"/>
+        
+        <provider
+            android:name="com.orange.browser.provider.AssetFileContentProvider"
+            android:authorities="com.orange.assetfile" />
+
+     	<meta-data android:value="4fbc7e825270152d9c000084" android:name="UMENG_APPKEY">   </meta-data>  
+     	<meta-data android:value="Development version" android:name="UMENG_CHANNEL"/>
+     	<meta-data android:name="TD_APP_ID"  android:value="7CBC990E71D75C2D74E9BAE27A45D536"/>
+        <meta-data android:name="TD_CHANNEL_ID" android:value="Development version"/>
+        <meta-data android:value="625f735323dd67dce51763a8025ccf6d" android:name="OBROWSER_APPKEY"/>
+    </application>
+
+</manifest>

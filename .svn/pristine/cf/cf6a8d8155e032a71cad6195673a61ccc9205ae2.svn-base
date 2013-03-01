@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_help_guide"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <ImageView
+        android:id="@+id/hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/hand"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/sunlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/sunlight"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/select_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/help_select_second_link"
+        android:textColor="@color/white"
+        android:background="@drawable/select_link_bg"
+        android:textSize="20dp" />
+
+</RelativeLayout>

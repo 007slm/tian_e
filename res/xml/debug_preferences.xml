@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen 
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="@string/pref_development_title" 
+        android:key="debug_menu" >
+
+        <!--
+             The javascript console is enabled by default when the user has
+             also enabled debug mode by navigating to about:debug.
+        -->
+
+        <com.orange.browser.BrowserHomepagePreference
+            android:hint="@string/http"
+            android:inputType="textUri|textMultiLine"
+            android:key="homepage"
+            android:title="@string/pref_content_homepage" />
+		<!--  
+        <CheckBoxPreference
+            android:key="javascript_console"
+            android:defaultValue="true"
+            android:title="@string/pref_development_error_console" />
+                        
+        <CheckBoxPreference
+            android:key="small_screen"
+            android:defaultValue="false"
+            android:title="@string/pref_development_single_column_rendering" />   
+
+        <CheckBoxPreference
+            android:key="wide_viewport"
+            android:defaultValue="true"
+            android:title="@string/pref_development_viewport" />
+                    
+        <CheckBoxPreference
+            android:key="normal_layout"
+            android:defaultValue="false"
+            android:title="@string/pref_development_normal_rendering" />       
+        
+        <CheckBoxPreference
+            android:key="enable_tracing"
+            android:defaultValue="false"
+            android:title="@string/pref_development_trace" />
+    
+        <CheckBoxPreference
+            android:key="enable_light_touch"
+            android:defaultValue="false"
+            android:title="Enable light touch" />
+
+        <CheckBoxPreference
+            android:key="enable_nav_dump"
+            android:defaultValue="false"
+            android:title="@string/pref_development_nav_dump" />
+
+        <EditTextPreference
+            android:key="js_engine_flags"
+            android:title="@string/js_engine_flags"
+            android:singleLine="true" />
+
+        <ListPreference
+            android:key="user_agent"
+            android:title="@string/pref_development_uastring"
+            android:entries="@array/pref_development_ua_choices"
+            android:entryValues="@array/pref_development_ua_values"
+            android:defaultValue="0"/>
+		-->
+    </PreferenceCategory>
+
+</PreferenceScreen>

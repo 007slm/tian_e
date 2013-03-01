@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rate_background"
+        android:orientation="vertical" 
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/rate_title"
+            android:textColor="@color/cygnus_focused"
+            android:textSize="20dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rate_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dp"
+            android:padding="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/rate_content"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="15dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rate_gray" />
+
+        <TextView
+            android:id="@+id/rate_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/context_menu_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/rate_title"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="20dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rate_gray" />
+
+        <TextView
+            android:id="@+id/rate_later"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/context_menu_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/rate_later"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="20dp" >
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rate_gray" />
+
+        <TextView
+            android:id="@+id/no_thanks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/context_menu_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/rate_no_thanks"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="20dp" >
+        </TextView>
+    </LinearLayout>
+
+</ScrollView>

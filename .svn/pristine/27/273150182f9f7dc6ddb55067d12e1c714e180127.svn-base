@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     FIXME: Change the name of this file!  It is now being used generically
+    for the browser
+-->
+<resources>
+
+    <color name="bookmarkListFaviconBackground">#23ffffff</color>
+    <color name="guide_background">#c0000000</color>
+    <color name="cygnus_background">#ff333333</color>
+    <color name="cygnus_background_popup">#ff282828</color>
+    <color name="cygnus_normal">#ffeeeeee</color>
+    <color name="cygnus_inverse">#ff333333</color>
+    <color name="cygnus_disabled">#ff888888</color>
+    <color name="cygnus_focused">#ff2eaccc</color>
+    <color name="cygnus_focused_faint">#802eaccc</color>
+    <color name="cygnus_dim">#ff999999</color>
+    <color name="white">#ffffffff</color>
+    <color name="ssl_text_label">#ffffffff</color>
+    <color name="ssl_text_value">#ffffffff</color>
+
+</resources>

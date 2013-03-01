@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="function_map_button">
+
+        <!-- <item name="android:background">@drawable/function_map_button</item> -->
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+        <item name="android:height">50dp</item>
+        <item name="android:width">50dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Suggestions">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <!-- <item name="android:background">?android:attr/editTextBackground</item> -->
+
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <!-- <item name="android:textColor">?android:attr/editTextColor</item> -->
+        <item name="android:gravity">center_vertical</item>
+
+        <!-- <item name="android:completionHintView">@android:layout/simple_dropdown_hint</item> -->
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownSelector">@android:drawable/list_selector_background</item>
+        <item name="android:popupBackground">@color/cygnus_background_popup</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+
+    <style name="MenuTextView">
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?textColorPrimaryClickable</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/browser_menu_text_size</item>
+    </style>
+
+    <style name="BrowserActionBarNameText">
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textSize">@dimen/browser_action_bar_text_size</item>
+    </style>
+    
+    <style name="ActionBarGlobal">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">@dimen/browser_action_bar_text_size_global</item>
+    </style>
+    
+    <style name="ActionBarLine1">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">@dimen/browser_action_bar_text_size_line1</item>
+    </style>
+    
+    <style name="ActionBarLine2">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textSize">@dimen/browser_action_bar_text_size_line2</item>
+    </style>
+
+    <style name="mydialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/panel_background</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+</resources>

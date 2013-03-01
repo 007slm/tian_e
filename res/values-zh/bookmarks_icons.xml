@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bookmark_preloads">
+        <item>@raw/thumb_baidu</item>
+        <item>@raw/thumb_wangyi</item>
+        <item>@raw/thumb_sohu</item>
+        <item>@raw/thumb_renren</item>
+        <item>@raw/thumb_weibo</item>
+        <item>@raw/thumb_tqq</item>
+        <item>@raw/thumb_taobao</item>
+        <item>@raw/thumb_youku</item>
+        <item>@raw/thumb_qiuxun</item>
+        <item>@raw/thumb_huanqiu</item>
+        <item>@raw/thumb_qiche</item>
+        <item>@raw/thumb_ruili</item>
+        <item>@raw/thumb_yinkeji</item>
+        <item>@raw/thumb_fengniao</item>
+        <item>@raw/thumb_hexun</item>
+        <item>@raw/thumb_paopao</item>
+        <item>@raw/thumb_jandan</item>
+    </array>
+</resources>

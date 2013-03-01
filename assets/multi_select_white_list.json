@@ -1,0 +1,31 @@
+{
+	"list" : [
+	       {"match_type":"prefix","url_pattern":"http://sina.cn/nc.php"},
+	       {"match_type":"regex","url_pattern":"http://3g\\.163\\.com/book/3g/home/[0-9]+/.*_dir1\\.html","url_host":"3g.163.com"},
+	       {"match_type":"exactly","url_pattern":"http://book.douban.com"},
+	       {"match_type":"prefix","url_pattern":"http://www.36kr.com"},
+	       {"match_type":"prefix","url_pattern":"http://wap.yuedu123.com"},
+	       {"match_type":"prefix","url_pattern":"http://m.sohu.com"},
+	       {"match_type":"prefix","url_pattern":"http://ebook12.3g.qq.com"},
+	       {"match_type":"prefix","url_pattern":"http://3g.kaixin001.com/home"},
+	       {"match_type":"prefix","url_pattern":"http://m.engadget.com"},
+	       {"match_type":"prefix","url_pattern":"http://3g.gfan.com"},
+	       {"match_type":"prefix","url_pattern":"http://www.cnbeta.com"},
+	       {"match_type":"prefix","url_pattern":"http://cnbeta.com"},
+	       {"match_type":"prefix","url_pattern":"http://www.duowan.com"},
+	       {"match_type":"prefix","url_pattern":"http://m.autohome.com.cn"},
+	       {"match_type":"prefix","url_pattern":"http://qiuxun.com"},
+	       {"match_type":"prefix","url_pattern":"http://wap.rayli.com"},
+	       {"match_type":"prefix","url_pattern":"http://i.jandan.net"},
+	       {"match_type":"prefix","url_pattern":"http://www.fengniao.com"},
+	       {"match_type":"prefix","url_pattern":"http://3g.pp.cn"},
+	       {"match_type":"prefix","url_pattern":"http://wap.hexun.com"},
+	       {"match_type":"regex","url_pattern":"http://g\\.xxsy\\.net/zjlist\\.asp\\?bookid=[0-9]+","url_host":"g.xxsy.net"},
+	       {"match_type":"prefix","url_pattern":"http://3g.xs.cn"},
+	       {"match_type":"prefix","url_pattern":"http://wap.zreading.cn"},
+	       {"match_type":"prefix","url_pattern":"http://3g.china.com"}
+	],
+	"exclusion" : [
+		    {"match_type":"prefix","url_pattern":"http://www.36kr.com/p"}
+        ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="homepage_base_json" translatable="false">     [
+		{\"country\":\"cn\",\"language\":\"zh\",\"home_url\":\"http://www.threepassnine.com/dev/\"},
+		{\"country\":\"fr\",\"language\":\"fr\",\"home_url\":\"http://www.orangemobileapp.com/\"}
+	] 
+</string>
+    <string name="version_country" translatable="false">cn</string>
+    <string name="new_package_info_patchsegment" translatable="false">services/getversioninfo.php</string>
+    <string name="analytics_api" translatable="false">http://www.lottogr.am/appstats/api/startClient</string>
+    <string name="analyticfeaturefr_api" translatable="false">http://threepassnine.com/config/analyticfeaturefr.json</string>
+    <string name="analyticfeaturecn_api" translatable="false">http://threepassnine.com/config/analyticfeaturecn.json</string>
+    <string name="blackwhitelist_url_patchsegment" translatable="false">services/getmultiselectlist.php?type=%1$s&amp;version=%2$s</string>
+    <string name="about_url" translatable="false">license/about.html</string>
+
+</resources>

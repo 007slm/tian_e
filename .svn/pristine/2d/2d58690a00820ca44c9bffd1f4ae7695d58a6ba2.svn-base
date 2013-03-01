@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/guide_background"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/gesture_tip"
+        android:text="@string/gesture_try"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+    
+    <ImageView
+        android:id="@+id/question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gesture_ask"
+        android:layout_below="@id/gesture_tip"
+        android:gravity="center_horizontal"
+        
+        />
+    
+
+</RelativeLayout>

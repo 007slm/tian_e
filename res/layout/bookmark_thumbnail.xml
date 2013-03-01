@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dip"
+    >
+
+    <ImageView android:id="@+id/thumb"
+        android:src="@drawable/bookmark_default"
+        android:scaleType="fitXY"
+        android:layout_height="76dp"
+        android:layout_width="96dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bookmark_itme_selector"/>
+
+    <!-- FIXME: Want to have a gradient over the thumb -->
+
+    <!-- This holds the star for addbookmark -->
+    <LinearLayout android:id="@+id/holder"
+        android:layout_height="65dp"
+        android:layout_width="89dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/thumb"
+        android:layout_alignTop="@+id/thumb"
+        >
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/history_item_un_selected"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="?android:textColorPrimary"
+            android:text="@string/add_bookmark_short"
+            />
+    </LinearLayout>
+
+    <TextView android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?android:textColorPrimaryInverse"
+        android:maxLines="1"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:paddingTop="0dip"
+        android:paddingBottom="0dip"
+        android:layout_marginTop="0dip"
+        android:ellipsize="marquee"
+        android:layout_below="@+id/thumb"
+        android:layout_alignLeft="@+id/thumb"
+        android:layout_alignRight="@+id/thumb"
+        android:gravity="center"
+        android:singleLine="true"
+        />
+
+</RelativeLayout>

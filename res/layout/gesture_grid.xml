@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cygnus_background"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="@string/gesture_anim_toast_msg"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true" >
+
+        <!-- first line -->
+        <TextView
+            android:id="@+id/jianbao"
+            android:layout_alignTop="@id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jianbao_background"
+            android:text="@string/jianbao"
+            android:paddingTop="70dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="18dp" >
+        </TextView> 
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/jianbao"
+            android:background="@drawable/anim_background"
+            android:drawableTop="@drawable/share_anim"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <!-- third line -->
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/jianbao"
+            android:layout_below="@id/jianbao"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/anim_background"
+            android:drawableTop="@drawable/backword_anim"
+            android:gravity="center"
+            android:text="@string/backward"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/share"
+            android:layout_alignTop="@id/back"
+            android:background="@drawable/anim_background"
+            android:drawableTop="@drawable/forward_anim"
+            android:gravity="center"
+            android:text="@string/forward"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <!-- fourth line -->
+
+        <TextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/jianbao"
+            android:layout_below="@id/back"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/anim_background"
+            android:drawableTop="@drawable/help_anim"
+            android:gravity="center"
+            android:text="@string/help"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/prev"
+            android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginBottom="24dp"
+	        android:layout_marginRight="40dp"
+            android:src="@drawable/help_close_gesture" />
+</RelativeLayout>

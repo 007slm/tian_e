@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- We use Chinese bookmarks here before we make decision of bookmarks for English.-->
+    <string-array name="bookmarks">
+        <item>百度</item>
+        <item>http://m.baidu.com/</item>
+        <item>网易</item>
+        <item>http://3g.163.com/</item>
+        <item>搜狐</item>
+        <item>http://wap.sohu.com/</item>
+        <item>人人网</item>
+        <item>http://3g.renren.com/</item>
+        <item>新浪微博</item>
+        <item>http://m.weibo.cn/</item>
+        <item>腾讯微博</item>
+        <item>http://t.qq.com/</item>
+        <item>淘宝网</item>
+        <item>http://m.taobao.com/</item>
+        <item>优酷网</item>
+        <item>http://3g.youku.com/</item>
+        <item>球讯网</item>
+        <item>http://qiuxun.com/</item>
+        <item>环球网</item>
+        <item>http://wap.huanqiu.com/</item>
+        <item>汽车之家</item>
+        <item>http://m.autohome.com.cn/</item>
+        <item>瑞丽女性</item>
+        <item>http://wap.rayli.com/</item>
+        <item>瘾科技</item>
+        <item>http://m.engadget.com/</item>
+        <item>蜂鸟网</item>
+        <item>http://www.fengniao.com/</item>
+        <item>和讯网</item>
+        <item>http://wap.hexun.com/</item>
+        <item>泡泡网</item>
+        <item>http://3g.pp.cn/</item>
+        <item>煎蛋</item>
+        <item>http://i.jandan.net/</item>
+    </string-array>
+    <!-- HomeLinks -->
+     <string-array name="homelinks" translatable="false">
+        <item>搜狐网</item>
+        <item>http://m.sohu.com/</item>
+        <item>0</item>
+        <item>/html/images/sohu.png</item>
+        <item>豆瓣读书</item>
+        <item>http://book.douban.com/</item>
+        <item>1</item>
+        <item>/html/images/douban.png</item>
+        <item>煎蛋</item>
+        <item>http://i.jandan.net/</item>
+        <item>2</item>
+        <item>/html/images/jandan.png</item>  
+        <item>手机小说</item>
+        <item>http://3g.xs.cn</item>
+        <item>3</item>
+        <item>/html/images/phone_reading.png</item>
+        <item>36氪</item>
+        <item>http://www.36kr.com/</item>
+        <item>4</item>
+        <item>/html/images/36.png</item>
+        <item>新浪网</item>
+        <item>http://sina.cn/</item>
+        <item>5</item>
+        <item>/html/images/sina.png</item>
+        <item>新浪微博</item>
+        <item>https://m.weibo.cn</item>
+        <item>6</item>
+        <item>/html/images/sina_weibo.png</item>
+        <item>潇湘书院</item>
+        <item>http://g.xxsy.net/</item>
+        <item>7</item>
+        <item>/html/images/shuyuan.png</item>
+        <item>Cnbeta</item>
+        <item>http://www.cnbeta.com/</item>
+        <item>8</item>
+        <item>/html/images/cnbeta.png</item>
+        <item>开心网</item>
+        <item>http://3g.kaixin001.com/</item>
+        <item>9</item>
+        <item>/html/images/kaixin.png</item>     
+        <item>阅读123</item>
+        <item>http://wap.yuedu123.com/</item>
+        <item>10</item>
+        <item>/html/images/yuedu123.png</item>
+    </string-array>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bookmarkscontext">
+        <item>@string/open_bookmark</item>
+        <item>@string/contextmenu_openlink_newwindow</item>
+        <item>@string/edit_bookmark</item>
+        <item>@string/create_shortcut_bookmark</item>
+        <item>@string/contextmenu_sharelink</item>
+        <item>@string/contextmenu_copylink</item>
+        <item>@string/remove_bookmark</item>
+    </string-array>
+    <string-array name="historycontext">
+        <item>@string/contextmenu_openlink</item>
+        <item>@string/contextmenu_openlink_newwindow</item>
+        <item>@string/save_to_bookmarks</item>
+        <item>@string/contextmenu_sharelink</item>
+        <item>@string/contextmenu_copylink</item>
+        <item>@string/remove_history_item</item>
+    </string-array>
+    <string-array name="bookmarks">
+        <item>Google</item>
+        <item>http://www.google.fr/</item>
+        <item>Picasa</item>
+        <item>http://picasaweb.google.fr/</item>
+        <item>Yahoo!</item>
+        <item>http://www.yahoo.fr/</item>
+        <item>MSN</item>
+        <item>http://fr.msn.com/</item>
+        <item>Twitter</item>
+        <item>https://twitter.com/twitter_fr</item>
+        <item>Facebook</item>
+        <item>http://fr-fr.facebook.com/</item>
+        <item>Wikipedia</item>
+        <item>http://www.wikipedia.fr/</item>
+        <item>MyTF1</item>
+        <item>http://www.tf1.fr/</item>
+        <item>CNN</item>
+        <item>http://www.cnn.com/</item>
+        <item>ESPN</item>
+        <item>http://espn.com/</item>
+        <item>eBay</item>
+        <item>http://www.ebay.fr/</item>
+        <item>Amazon</item>
+        <item>http://www.amazon.fr/</item>
+        <item>Weather Channel</item>
+        <item>http://fr.weather.com/</item>
+    </string-array>
+
+    <string-array name="homelinks" translatable="false">
+    </string-array>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/fm_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" android:padding="5dp" android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/fm_bt_history"
+            style="@style/function_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History" android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/fm_bt_dm"
+            style="@style/function_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DL" android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/fm_bt_help"
+            style="@style/function_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help" android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/fm_bt_setting"
+            style="@style/function_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting" android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fm_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" android:paddingTop="30dp" android:paddingBottom="30dp" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_below="@id/fm_top" android:layout_above="@+id/fm_bottom">
+
+        <LinearLayout
+            android:id="@+id/fm_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" android:layout_alignParentLeft="true">
+
+            <Button
+                android:id="@+id/fm_bt_find"
+                style="@style/function_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find" />
+
+            <Button
+                android:id="@+id/fm_bt_screen_mode"
+                style="@style/function_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode" />
+
+            <Button
+                android:id="@+id/fm_bt_pageinfo"
+                style="@style/function_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fm_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/fm_bt_add"
+                style="@style/function_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+            <Button
+                android:id="@+id/fm_bt_share"
+                style="@style/function_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share" />
+
+            <Button
+                android:id="@+id/fm_bt_save"
+                style="@style/function_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fm_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" android:padding="5dp" android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/fm_bt_bookmark"
+            style="@style/function_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BookMark" />
+
+        <Button
+            android:id="@+id/fm_bt_readlist"
+            style="@style/function_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ReadList" />
+
+        <Button
+            android:id="@+id/fm_bt_wm"
+            style="@style/function_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WM" />
+
+        <Button
+            android:id="@+id/fm_bt_quit"
+            style="@style/function_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quit" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fm_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="#ffffff" android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- These are the standard attributes that make up a complete theme. -->
+    <declare-styleable name="PopupWindow">
+        <attr name="autoCompleteTextViewStyle" format="reference" />
+        <attr name="popupBackground" format="reference|color" />
+        <attr name="popupAnimationStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="textColorPrimaryClickable" format="reference|color" />
+    <attr name="textColorInverseClickable" format="reference|color" />
+    <attr name="colorFocused" format="reference|color" />
+    <attr name="colorFocusedFaint" format="reference|color" />
+    <attr name="tabSelector" format="reference|color" />
+    <attr name="contentBackground" format="reference|color" />
+
+</resources>

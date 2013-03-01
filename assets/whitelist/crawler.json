@@ -1,0 +1,309 @@
+{
+   "version" : 1,
+   "list" : [
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://ebook.3g.qq.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://sports.sina.cn/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.sohu.com/c/3/?_once_=000025_top_tiyu_v3"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://sports.3g.cn"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.hao123.com/tuangou"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.360buy.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.vancl.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.dangdang.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://www.amazon.cn/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.tuan800.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.mbaobao.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://weibo.cn"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://pt.3g.qq.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.mop.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://waphi.baidu.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.my.91.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.appchina.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.anzhi.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.wandoujia.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.mumayi.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.163.com/m/android"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.lecoo.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.3gyu.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://csg.3g.qq.com/g/index.a"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.shouji.com.cn/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.3533.com/youxi/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.duowan.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.eastmoney.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://finance.sina.cn/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.jrj.com.cn/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.stockstar.com/rootnet/index3.aspx?t1=1206218980894pxb"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.21cbn.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wapgw.cn"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.58.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.ganji.cn/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://shanghai.baixing.com/m/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://home.meishichina.com/wap.php"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.aibang.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.fangtong.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://bendi.m.taobao.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.ctrip.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://touch.qunar.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://zuoche.com/m"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.12580.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.jiayuan.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.baihe.com/index/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://marry5.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.supei.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://tx.com.cn/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.51taonan.com/?page=3g_homepage"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.kugou.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://yy.ttpod.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://mp3.3g.cn"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://music.wap.soso.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.kxting.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap.duomi.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://wap2.qiushibaike.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.mtime.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.mogujie.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://www.meilishuo.com/welcome"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.xianguo.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.kl688.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.jifenzhong.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.pengpeng.com"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.damai.cn"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.wangpiao.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.digu.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://m.fandongxi.com/"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.163.com/sports"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.163.com/ent"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.163.com/game"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.163.com/stock"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.yuehui.163.com/mobile"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.163.com/money"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.163.com/tech"
+      },
+      {
+         "match_type" : "prefix",
+         "url_pattern" : "http://3g.163.com/bbs"
+      }
+   ]
+}

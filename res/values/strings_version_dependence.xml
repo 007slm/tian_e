@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="application_name">9¾ browser</string>
+     <string name="share_text">shared from Cygnus browser http://t.cn/zOrkSaQ</string>
+</resources>

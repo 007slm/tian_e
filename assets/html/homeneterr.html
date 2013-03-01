@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>9点3刻</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,target-densitydpi=device-dpi"/>
+	<style type="text/css">
+	body{overflow-x:hidden;font-family:Arial,Helvetica,sans-serif;color:#fff;background:url(images/background.png) top left repeat;}
+	@media all and (orientation:portrait){
+		.owl{width:100%; height:25%; margin-top:10%; text-align:center; position:relative; z-index:10;}
+		.board{width:70%; height:40%; border:solid 10px #2eaccc; margin-left:13%; background-color:#ebf8fb; position:relative; top:-15px; z-index:5;}
+		#words{width:90%; height:auto; padding:10% 5% 0 5%; margin:0 0 0 0;font:bold 20pt 'Helvetica Neue',Arial,Helvetica,Geneva,sans-serif; color:#666666; text-align:center;}
+		.corner{width:100%; height:56px; position:relative;}
+		.corner img{bottom:0px; right:0px; position:absolute; height:56px;}
+	}
+	@media all and (orientation:landscape){
+		.owl{width:100%; height:25%; margin-top:5%; text-align:center; position:relative; z-index:10;}
+		.board{width:90%; height:40%; border:solid 10px #2eaccc; margin-left:3%; background-color:#ebf8fb; position:relative; top:-15px; z-index:5;}
+		#words{width:94%; height:auto; padding:3% 3% 0 3%; margin:0 0 0 0;font:bold 20pt 'Helvetica Neue',Arial,Helvetica,Geneva,sans-serif; color:#666666; text-align:center;}
+		.corner{width:100%; height:30px; position:relative;}
+		.corner img{bottom:0px; right:0px; position:absolute; height:30px;}
+	}
+	.owl img{height:100%;}
+	</style>
+	<script type="text/javascript">	
+	window.onload = function(){
+		var wordsElm = document.getElementById("words");
+		wordsElm.innerHTML = "欢迎使用9点3刻浏览器,现在无法访问主页,请检查您的网络设置。";
+	}
+	</script>
+</head>
+<body>
+<div class="owl">
+	<img alt="" src="images/errorOwl.png" />
+</div>
+<div class="board">
+	<div id="words">
+		
+	</div>
+	<div class="corner">
+		<img alt="" src="images/corner.png" />
+	</div>
+</div>
+</body>
+</html>

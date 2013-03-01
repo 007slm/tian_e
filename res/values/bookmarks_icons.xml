@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bookmark_preloads">
+        <item>@raw/thumb_google</item>
+        <item>@raw/thumb_picasa</item>
+        <item>@raw/thumb_yahoo</item>
+        <item>@raw/thumb_msn</item>
+        <item>@raw/thumb_twitter</item>
+        <item>@raw/thumb_facebook</item>
+        <item>@raw/thumb_wikipedia</item>
+        <item>@raw/thumb_mytf1</item>
+        <item>@raw/thumb_cnn</item>
+        <item>@raw/thumb_espn</item>
+        <item>@raw/thumb_ebay</item>
+        <item>@raw/thumb_amazon</item>
+        <item>@raw/thumb_weatherchannel</item>
+    </array>
+</resources>

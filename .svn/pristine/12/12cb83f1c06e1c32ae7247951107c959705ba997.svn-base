@@ -1,0 +1,46 @@
+<html>    
+	<script type="text/javascript">
+	
+		function initHtml() {
+        	document.body.innerHTML= " ";
+		}
+		
+        function fillReadingList() { 
+        	initHtml();
+
+       		var items = eval(window.readingInterface.getReadingList(6));
+			for (var i = 0; i < items.length; i++) {
+				var icon = "file:///" + items[i].iconUri;
+				var title = items[i].title;
+				var url = items[i].url;
+				var clickEvent = "viewArticle('" + url + "')";
+				var read_state = null;
+				
+				if (items[i].read_state == 1) {
+					read_state = "[Unread]";
+				} else if (items[i].read_state == 2) {
+					read_state = "[Read]";
+				}
+				
+				document.write("<li><img src=\"" + icon + "\"><p>" + read_state + "</p><p><a onClick=\"" +
+				 clickEvent + "\" href=\"#\">" + 
+				 title + "</a></p></img></li>");
+			}			
+        }      
+        
+        function viewArticle(url) {
+        	window.readingInterface.viewArticle(url);
+        }
+        
+          
+	</script>        
+<!--
+	<body>
+		<li>
+			<img src="http://i50.tinypic.com/hwh0ud.png">
+				<p><a onClick="viewArticle('www.google.com')" href="#">Google</a></p>
+			</img>
+		</li>
+	</body>
+-->	
+</html>    

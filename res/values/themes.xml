@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Cygnus.Default" parent="@android:Theme.Black"></style>
+
+    <style name="Theme.Cygnus" parent="Cygnus.Default">
+        <item name="android:windowBackground">@color/cygnus_background</item>
+        <item name="android:colorBackground">@color/cygnus_background</item>
+        <item name="android:colorForeground">@color/cygnus_normal</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColorPrimary">@color/primary_text_dark</item>
+        <item name="android:textColorPrimaryInverse">@color/primary_text_light</item>
+        <item name="android:textColorSecondary">@color/secondary_text_dark</item>
+        <item name="android:textColorHighlight">@color/cygnus_focused_faint</item>
+        <item name="android:cacheColorHint">@color/cygnus_background_popup</item>
+        <item name="textColorPrimaryClickable">@color/primary_text_clickable_dark</item>
+        <item name="textColorInverseClickable">@color/text_inverse_clickable</item>
+        <item name="tabSelector">@drawable/tab_selector</item>
+        <item name="colorFocused">@color/cygnus_focused</item>
+        <item name="colorFocusedFaint">@color/cygnus_focused_faint</item>
+        <item name="contentBackground">@drawable/content_background</item>
+        <item name="popupBackground">@color/cygnus_background_popup</item>
+    </style>
+
+    <style name="Theme.Cygnus.Dialog" parent="@android:Theme.Dialog">
+        <item name="colorFocused">@color/cygnus_focused</item>
+        <item name="android:textColorHighlight">@color/cygnus_focused_faint</item>
+    </style>
+
+    <style name="Theme.Cygnus.Dialog.NoTitle" parent="@android:Theme.Dialog">
+        <item name="colorFocused">@color/cygnus_focused</item>
+        <item name="android:textColorHighlight">@color/cygnus_focused_faint</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+        
+    <style name="Theme.Cygnus.Bookmark">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>
